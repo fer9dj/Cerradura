@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Acceso</title>
+<style>
+    body {
+        background: #111;
+        color: #eee;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 60px;
+    }
+    input {
+        font-size: 22px;
+        padding: 10px;
+        width: 180px;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+    button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background: #4caf50;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<h2>Ingrese PIN</h2>
+<input id="pin" type="password" maxlength="6" autocomplete="off">
+<br>
+<button onclick="validar()">Aceptar</button>
+
+<script>
+function validar() {
+    const pin = document.getElementById('pin').value;
+
+    if (pin === "123456") {
+        // TU VÍNCULO EXACTO
+        window.location.href =
+            "https://www.virtualsmarthome.xyz/url_routine_trigger/activate.php?trigger=544ff1c4-0289-4c20-8bde-059d42080dd2&token=f7b36347-0d80-49bd-87c0-aa651806ce32&response=smartphone";
+    } else {
+        alert("PIN incorrecto");
+    }
+}
+</script>
+
+</body>
+</html>
